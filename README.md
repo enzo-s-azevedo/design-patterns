@@ -11,7 +11,7 @@
 
 ![UML Builder](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/c1eff34b-2147-41af-9cb9-dec2e3df1423)
 
-`Imagem extraída de: https://refactoring.guru/pt-br/design-patterns/builder`
+`Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/builder
 
 
 
@@ -26,7 +26,7 @@
 
 ![UML Proxy](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/a7428143-e448-473f-8c80-259dff95732e)
 
-`Imagem extraída de: https://refactoring.guru/pt-br/design-patterns/proxy`
+`Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/proxy
 
 ## Comportamental
 
@@ -39,7 +39,7 @@
 
 ![UML Mediator](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/ca8f725a-a031-411f-9bdf-12590960e390)
 
-`Imagem extraída de: https://refactoring.guru/pt-br/design-patterns/mediator`
+`Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/mediator
 
 
 ##Referências: https://refactoring.guru/pt-br/design-patterns/
