@@ -232,5 +232,5 @@ void ClientCode(const Subject &subject) {
 - #### Explicação do código:
 
 
-## Referências: https://refactoring.guru/pt-br/design-patterns/
+### Todo o conteúdo desse repositório usou como refererência https://refactoring.guru/pt-br/design-patterns/
 
