@@ -42,5 +42,5 @@
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/mediator
 
 
-##Referências: https://refactoring.guru/pt-br/design-patterns/
+## Referências: https://refactoring.guru/pt-br/design-patterns/
 
