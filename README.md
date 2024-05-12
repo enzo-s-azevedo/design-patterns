@@ -9,7 +9,9 @@
 - Solução: Para isso, são criados diversos objetos, chamados de “builder”, que são responsáveis por construir, assim, quando necessita-se construir um objeto, apenas são chamadas as etapas do objeto “builder” que são necessárias de acordo com o interesse. Além disso, também pode haver uma classe chamada de “diretor”, a fim de estabelecer a sequência em que as tarefas dos “builders” serão concretizadas.
 - #### Diagrama UML:
 
-![UML Builder](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/c1eff34b-2147-41af-9cb9-dec2e3df1423)
+<p align="center">
+  <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/c1eff34b-2147-41af-9cb9-dec2e3df1423" />
+</p>
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/builder
 
@@ -30,7 +32,9 @@
 - Solução: cria-se um objeto proxy que imita o objeto real e é responsável por interagir com o cliente. Assim, o objeto proxy atua como um intermediário realizando tarefas adicionais, como o controle ao acesso, e realizando as operações que seriam delegadas ao objeto real.
 - #### Diagrama UML:
 
-![UML Proxy](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/a7428143-e448-473f-8c80-259dff95732e)
+<p align="center">
+  <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/a7428143-e448-473f-8c80-259dff95732e" />
+</p>
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/proxy
 
@@ -47,7 +51,9 @@
 - Solução: os objetos ficam dependentes apenas do objeto mediador, o qual é responsável por redirecionar as chamadas para os objetos apropriados. Assim, a dependência entre os objetos é reduzida e o código torna-se mais extensível e menos complexo. 
 - #### Diagrama UML:
 
-![UML Mediator](https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/ca8f725a-a031-411f-9bdf-12590960e390)
+<p align="center">
+  <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/ca8f725a-a031-411f-9bdf-12590960e390" />
+</p>
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/mediator
 
