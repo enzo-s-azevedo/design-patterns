@@ -8,7 +8,6 @@
 - Qual problema resolve: evita que seja criado um número grande e desnecessário de subclasses ou que se crie um construtor que aborde todas as possibilidades, dessa maneira, na maioria dos casos se tem inúmeras chamadas inúteis.
 - Solução: Para isso, são criados diversos objetos, chamados de “builder”, que são responsáveis por construir, assim, quando necessita-se construir um objeto, apenas são chamadas as etapas do objeto “builder” que são necessárias de acordo com o interesse. Além disso, também pode haver uma classe chamada de “diretor”, a fim de estabelecer a sequência em que as tarefas dos “builders” serão concretizadas.
 - #### Diagrama UML:
-
 <p align="center">
   <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/c1eff34b-2147-41af-9cb9-dec2e3df1423" />
 </p>
@@ -31,7 +30,6 @@
 - Qual problema resolve: evita o alto consumo desnecessário de recursos do sistema e códigos duplicados.
 - Solução: cria-se um objeto proxy que imita o objeto real e é responsável por interagir com o cliente. Assim, o objeto proxy atua como um intermediário realizando tarefas adicionais, como o controle ao acesso, e realizando as operações que seriam delegadas ao objeto real.
 - #### Diagrama UML:
-
 <p align="center">
   <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/a7428143-e448-473f-8c80-259dff95732e" />
 </p>
@@ -50,7 +48,6 @@
 - Qual problema resolve: impede que haja um código muito complexo, evita um alto acoplamento desnecessário entre os objetos e promove a extensibilidade do código.
 - Solução: os objetos ficam dependentes apenas do objeto mediador, o qual é responsável por redirecionar as chamadas para os objetos apropriados. Assim, a dependência entre os objetos é reduzida e o código torna-se mais extensível e menos complexo. 
 - #### Diagrama UML:
-
 <p align="center">
   <img src="https://github.com/enzo-s-azevedo/solid-principles/assets/142538641/ca8f725a-a031-411f-9bdf-12590960e390" />
 </p>
