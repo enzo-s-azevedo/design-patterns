@@ -13,6 +13,7 @@
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/builder
 
+- Explicação do código:
 
 
 ## Estrutural
@@ -28,6 +29,14 @@
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/proxy
 
+- Explicação do código:  
+* `Product1` representa a estrutura do produto que será construído.
+*	`Builder` é uma classe abstrata que define os métodos para criar o objeto.
+*	`ConcreteBuilder1` implementa a interface `Builder` de forma concreta. 
+*	`Director` coordena a construção do objeto `Product` seguindo determinadas configurações. 
+*	`ClientCode` informa como será construído o objeto produto através de comunicações com o `Builder` e `Director`.
+
+
 ## Comportamental
 
 ### Mediator
@@ -41,7 +50,7 @@
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/mediator
 
-
+- Explicação do código:
 
 
 ## Referências: https://refactoring.guru/pt-br/design-patterns/
