@@ -155,8 +155,64 @@ void ClientCode(Director& director)
 
 `Imagem extraída de:` https://refactoring.guru/pt-br/design-patterns/proxy
 
-- #### Explicação do código:  
+- #### Explicação do código:
+*	`Subject` atribui operações comuns para o RealSubject e o Proxy e declara o método `Request()` que ambos devem implementar.
+```c++
+class Subject {
+ public:
+  virtual void Request() const = 0;
+};
+```
+* `RealSubject` contém a lógica de negócio principal e implementa o método `Request()` que executa o trabalho real.
+```c++
+class RealSubject : public Subject {
+ public:
+  void Request() const override {
+    std::cout << "RealSubject: Handling request.\n";
+  }
+};
+```
+*	`Proxy` é uma interface idêntica ao `RealSubject`, que atua como intermediária controlando o acesso através dos métodos:
 
+   •`Request()`: implementa a operação `Request()` da interface `Subject`. Verifica o acesso usando `CheckAccess()`, se a verificação for bem-sucedida, encaminha a solicitação para o `RealSubject` e registra o acesso usando `LogAccess()`.
+```c++
+class Proxy : public Subject {
+
+ private:
+  RealSubject *real_subject_;
+
+  bool CheckAccess() const {
+    std::cout << "Proxy: Checking access prior to firing a real request.\n";
+    return true;
+  }
+  void LogAccess() const {
+    std::cout << "Proxy: Logging the time of request.\n";
+  }
+
+ public:
+  Proxy(RealSubject *real_subject) : real_subject_(new RealSubject(*real_subject)) {
+  }
+
+  ~Proxy() {
+    delete real_subject_;
+  }
+
+  void Request() const override {
+    if (this->CheckAccess()) {
+      this->real_subject_->Request();
+      this->LogAccess();
+    }
+  }
+};
+```
+*	ClientCode: demonstra a tentativa do cliente interagir com o `Subject`, invocando a operação `Request()` no `Subject`.
+```c++
+void ClientCode(const Subject &subject) {
+ 
+  subject.Request();
+
+}  
+```
 
 
 ## Comportamental
